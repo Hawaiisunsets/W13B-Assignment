@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TweetList/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TweetList from '@/components/TweetList.vue';
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TweetList,
   }
 }
 </script>
@@ -26,3 +28,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
