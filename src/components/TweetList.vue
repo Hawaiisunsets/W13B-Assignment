@@ -40,7 +40,9 @@
             makeTweets(){
                 for (let getTweets of this.tweets){
                     console.log(getTweets);
-                    document.querySelector(`article`).insertAdjacentHTML(`beforeend`, `<p>${getTweets}</p>`);
+                    document.querySelector(`article`).insertAdjacentHTML(`beforeend`, `<p>${getTweets.tweet}</p>`);
+                    document.querySelector(`article`).insertAdjacentHTML(`beforeend`, `<p>${getTweets.userName}</p>`);
+                    document.querySelector(`article`).insertAdjacentHTML(`beforeend`, `<p>${getTweets.dateCreated}</p>`);
                 }
             },
         },
